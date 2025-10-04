@@ -20,8 +20,8 @@
 // ========================================
 // BESTELLZEITRAUM HIER EINSTELLEN!
 // ========================================
-const orderStartDate = new Date('2025-11-01'); // Neues Startdatum
-const orderEndDate = new Date('2025-11-10');   // Neues Enddatum
+const orderStartDate = new Date('2025-11-01'); // Startdatum: YYYY-MM-DD
+const orderEndDate = new Date('2025-11-10');   // Enddatum: YYYY-MM-DD
 const isOrderPeriodActive = () => {
     const today = new Date();
     today.setHours(0, 0, 0, 0);
@@ -1338,6 +1338,4 @@ disabled={!isOrderPeriodActive()}
         ReactDOM.render(<TeamShop />, document.getElementById('root'));
     </script>
 </body>
-
 </html>
-
